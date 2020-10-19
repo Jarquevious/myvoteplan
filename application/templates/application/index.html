@@ -2,70 +2,492 @@
 
 {% block content %}
 
-  <!-- Hero Section-->
-  <section class="bg-light">
-    <div class="container"> 
-      <div class="row">
-        <div class="col-lg-6 order-2 order-lg-1">
-          <h1>Luckmoshy Designer Template</h1>
-          <p class="lead">Proident eu nisi commodo enim deserunt enim duis sunt nostrud anim. Sunt do sit enim veniam nostrud culpa adipisicing do ullamco occaecat et. </p>
-          <p><a href="#" class="btn btn-primary shadow mr-2">Discover More</a><a href="#" class="btn btn-outline-primary">Some another action</a></p>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2"><img src="https://3.bp.blogspot.com/-_7vaKiNZPXk/XCWoF-0xj7I/AAAAAAAAAMk/Bx7Ne5WLEvINHPDoG1jwY6rGO2d62pprwCKgBGAs/s1600/ux-design.jpeg" alt="..." class="img-fluid"></div>
-      </div>
-    </div>
-  </section>
+{% load static %}
 
-
-    <!-- Services-->
-    <section>
-        <div class="container"> 
-          <h2>Services</h2>
-          <p class="text-muted mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-          <div class="row">
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <svg class="lnr text-primary services-icon">
-                <use xlink:href="#lnr-magic-wand"></use>
-              </svg>
-              <h6>Ex cupidatat eu</h6>
-              <p class="text-muted">Ex cupidatat eu officia consequat incididunt labore occaecat ut veniam labore et cillum id et.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <svg class="lnr text-primary services-icon">
-                <use xlink:href="#lnr-heart"></use>
-              </svg>
-              <h6>Tempor aute occaecat</h6>
-              <p class="text-muted">Tempor aute occaecat pariatur esse aute amet.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <svg class="lnr text-primary services-icon">
-                <use xlink:href="#lnr-rocket"></use>
-              </svg>
-              <h6>Voluptate ex irure</h6>
-              <p class="text-muted">Voluptate ex irure ipsum ipsum ullamco ipsum reprehenderit non ut mollit commodo.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <svg class="lnr text-primary services-icon">
-                <use xlink:href="#lnr-paperclip"></use>
-              </svg>
-              <h6>Tempor commodo</h6>
-              <p class="text-muted">Tempor commodo nostrud ex Lorem occaecat duis occaecat minim.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <svg class="lnr text-primary services-icon">
-                <use xlink:href="#lnr-screen"></use>
-              </svg>
-              <h6>Et fugiat sint occaecat</h6>
-              <p class="text-muted">Et fugiat sint occaecat voluptate incididunt anim nostrud ea cillum cillum consequat.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-3">
-              <svg class="lnr text-primary services-icon">
-                <use xlink:href="#lnr-inbox"></use>
-              </svg>
-              <h6>Et labore tempor et</h6>
-              <p class="text-muted">Et labore tempor et adipisicing dolor.</p>
+      <!-- Page Header-->
+      <section class="section page-header-navbar rd-navbar-outer jumbotron-classic">
+        <header class="section page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-minimal rd-navbar-minimal-wide" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <!-- RD Navbar Panel-->
+                  <div class="rd-navbar-panel">
+                    <!-- RD Navbar Toggle-->
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"> <img src="{% static 'images/logo-default-190x37.png' %}" alt="" width="190" height="37"/></a>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <!-- RD Navbar Nav-->
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">About</a>
+                          <!-- RD Navbar Dropdown-->
+                          <ul class="rd-menu rd-navbar-dropdown">
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-us.html">About Us</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-me.html">About Me</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="team.html">Team</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="testimonials.html">Testimonials</a></li>
+                          </ul>
+                        </li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Blog</a>
+                          <!-- RD Navbar Dropdown-->
+                          <ul class="rd-menu rd-navbar-dropdown">
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">Grid Blog</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="sidebar-blog.html">Sidebar Blog</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-blog-post.html">Single Blog Post</a></li>
+                          </ul>
+                        </li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Portfolio</a>
+                          <!-- RD Navbar Dropdown-->
+                          <ul class="rd-menu rd-navbar-dropdown">
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-layout.html">Grid Layout</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-layout.html">Masonry Layout</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="modern-layout.html">Modern Layout</a></li>
+                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-event.html">Single Event</a></li>
+                          </ul>
+                        </li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
+                          <!-- RD Navbar Megamenu-->
+                          <ul class="rd-menu rd-navbar-megamenu">
+                            <li class="rd-megamenu-item">
+                              <ul class="rd-megamenu-list">
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">Progress bars</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs.html">Tabs</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">Tables</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="accordions.html">Accordions</a></li>
+                              </ul>
+                            </li>
+                            <li class="rd-megamenu-item">
+                              <ul class="rd-megamenu-list">
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">404 Page</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503-page.html">503 Page</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming Soon</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="under-construction.html">Under Construction</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="donate.html">Donate</a></li>
+                              </ul>
+                            </li>
+                            <li class="rd-megamenu-item">
+                              <ul class="rd-megamenu-list">
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="careers.html">Careers</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search results</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="projects.html">Projects</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="single-project.html">Single Project</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="single-job.html">Single Job</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="small-features.html">Small Features</a></li>
+                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- RD Navbar Search-->
+                    <div class="rd-navbar-search" id="rd-navbar-search-1">
+                      <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle="#rd-navbar-search-1"><span></span></button>
+                      <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live-1" method="GET">
+                        <div class="form-wrap">
+                          <label class="form-label" for="rd-navbar-search-form-input-1">Search...</label>
+                          <input class="form-input rd-navbar-search-form-input" id="rd-navbar-search-form-input-1" type="text" name="s" autocomplete="off">
+                          <div class="rd-search-results-live" id="rd-search-results-live-1"></div>
+                        </div>
+                        <button class="rd-search-form-submit fa-search" type="submit"></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="parallax-container" data-parallax-img="{% static 'images/parallax-2.jpg' %}">
+          <div class="parallax-content">
+            <div class="jumbotron-classic-inner">
+              <div class="container">
+                <div class="jumbotron-classic-content">
+                  <div class="wow-outer">
+                    <h6 class="title-decorated wow slideInLeft">Change Your Future</h6>
+                  </div>
+                  <h1 class="font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Election Day Is Coming</span></h1>
+                  <p class="big wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">Make sure to take care of your family and your own future by supporting Freedom Political Party.</span></p>
+                  <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" href="donate.html" data-wow-delay=".4s">Donate Now</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-{% endblock %}
+      <!-- Our Services-->
+      <section class="section section-lg text-center">
+        <div class="container">
+          <h3 class="wow-outer"><span class="wow slideInUpOur">Projects</span></h3>
+          <p class="wow-outer"><span class="text-width-1 wow slideInDown">Our party works on a variety of reforms and projects for our community. Below you can read about what we are planning to do in the next few years.</span></p>
+          <div class="row row-50 row-xxl-70 offset-top-2">
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft">
+                <div class="box-light-icon linearicons-palette"></div>
+                <h4 class="box-light-title">Arts & Culture</h4>
+                <p>Our party wants to improve the state of culture and arts in our country to give artists more creative freedom.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft" data-wow-delay=".05s">
+                <div class="box-light-icon linearicons-city"></div>
+                <h4 class="box-light-title">Housing & land</h4>
+                <p>The market of real estate & housing has been rapidly developing and we believe it needs better regulation.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft" data-wow-delay=".1s">
+                <div class="box-light-icon linearicons-shield-check"></div>
+                <h4 class="box-light-title">Policing & crime</h4>
+                <p>To enhance the crime-fighting in the US, our party has recently introduced new policing initiative.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft" data-wow-delay=".15s">
+                <div class="box-light-icon linearicons-tree"></div>
+                <h4 class="box-light-title">Environment</h4>
+                <p>Our Environment Program provides policy and guidance to help maintain compliance with environmental laws.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft">
+                <div class="box-light-icon linearicons-graduation-hat"></div>
+                <h4 class="box-light-title">Education</h4>
+                <p>Education has always been one of the greatest concerns for us because it’s often left behind by other parties.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft" data-wow-delay=".05s">
+                <div class="box-light-icon linearicons-heart"></div>
+                <h4 class="box-light-title">Volunteering</h4>
+                <p>Our team is trying to improve the attitude towards political volunteering who try to change our country for the better.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft" data-wow-delay=".1s">
+                <div class="box-light-icon box-light-title linearicons-first-aid"></div>
+                <h4 class="box-light-title">Medical Reform</h4>
+                <p>Changes to the medical reform imply better service at hospitals and private health centers for all US residents.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+              <!-- Box Light-->
+              <article class="box-light wow slideInLeft" data-wow-delay=".15s">
+                <div class="box-light-icon linearicons-users2"></div>
+                <h4 class="box-light-title">Social Reform</h4>
+                <p>Due to the recent changes in our society, we have developed a social reform designed to help our citizens.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- A Few Words About Us-->
+      <section class="section section-lg bg-gray-100">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-10 col-lg-6 col-xl-5">
+              <h3 class="wow-outer"><span class="wow slideInDown">About Our Party</span></h3>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">Since 1967, the Freedom Political Party has been the home to those who support political and economic progress. </span></p>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">We see our goal in introducing new reforms and changing Americans’ life for the better. We are the team of seasoned political professionals who work for the good of American citizens. Our party aims to improve economic and social opportunities for all US residents.</span></p>
+              <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="about-us.html">Learn more</a></div>
+            </div>
+            <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive wow slideInRight" src="{% static 'images/large-features-2-570x368.jpg' %}" alt="" width="570" height="368"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Thin-->
+      <section class="section section-xs bg-secondary text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-12">
+              <div class="box-cta-thin">
+                <h4 class="wow-outer"><span class="wow slideInRight">Support <span class="font-weight-bold">Our Activities</span> By a Donation!</span></h4><a class="button button-primary button-winona" href="donate.html">Make a Donation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Who We Are-->
+      <section class="section section-lg section-last text-center">
+        <div class="container">
+          <h3 class="wow-outer text-center"><span class="wow slideInDown">Our Team</span></h3>
+          <div class="row row-50">
+            <div class="col-sm-6 col-lg-4 wow-outer">
+              <!-- Profile Minimal-->
+              <article class="profile-minimal wow slideInLeft"><img class="profile-minimal-image" src="{% static 'images/team-2-370x368.jpg' %}" alt="" width="370" height="368"/>
+                <div class="profile-minimal-caption">
+                  <h4 class="profile-minimal-title">Jean Thompson</h4>
+                  <p class="profile-minimal-position">Political Engagement Director</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow-outer">
+              <!-- Profile Minimal-->
+              <article class="profile-minimal wow slideInLeft" data-wow-delay=".05s"><img class="profile-minimal-image" src="{% static 'images/team-3-370x368.jpg' %}" alt="" width="370" height="368"/>
+                <div class="profile-minimal-caption">
+                  <h4 class="profile-minimal-title">Brian Payne</h4>
+                  <p class="profile-minimal-position">Strategic Growth Manager</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow-outer"> 
+              <!-- Profile Minimal-->
+              <article class="profile-minimal wow slideInLeft" data-wow-delay=".1s"><img class="profile-minimal-image" src="{% static 'images/team-1-370x368.jpg' %}" alt="" width="370" height="368"/>
+                <div class="profile-minimal-caption">
+                  <h4 class="profile-minimal-title">Nathan Porter</h4>
+                  <p class="profile-minimal-position">PR Manager</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="about-us.html">View all Team</a></div>
+        </div>
+      </section>
+      <!-- Testimonials-->
+      <section class="section section-lg bg-gray-100">
+        <div class="container">
+          <h3 class="text-center">What People Say About Our Party</h3>
+          <div class="row row-50 justify-content-center justify-content-lg-between">
+            <div class="col-md-10 col-lg-5">
+              <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false" data-loop="false" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
+                <div class="wow-outer">
+                  <blockquote class="quote-modern wow slideInLeft">
+                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
+                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
+                    </svg>
+                    <div class="quote-modern-text">
+                      <p>Freedom is one of those political parties who really care about their supporters. They know how to help the citizens while also improving the economic situation by introducing rules and regulations for product and services distribution in many regions of the USA.</p>
+                    </div>
+                    <div class="quote-modern-meta">
+                      <div class="quote-modern-avatar"><img src="{% static 'images/testimonials-person-3-96x96.jpg' %}" alt="" width="96" height="96"/>
+                      </div>
+                      <div class="quote-modern-info">
+                        <cite class="quote-modern-cite">Albert Webb</cite>
+                        <p class="quote-modern-caption">Freelancer</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <div class="wow-outer">
+                  <blockquote class="quote-modern wow slideInLeft">
+                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
+                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
+                    </svg>
+                    <div class="quote-modern-text">
+                      <p>Your party is one of the few that help small businesses. Though you have a great program for every sector of economy, your thoughts on developing small companies may greatly improve the role of entrepreneurs in our state and many other cities and towns. </p>
+                    </div>
+                    <div class="quote-modern-meta">
+                      <div class="quote-modern-avatar"><img src="{% static 'images/testimonials-person-1-96x96.jpg' %}" alt="" width="96" height="96"/>
+                      </div>
+                      <div class="quote-modern-info">
+                        <cite class="quote-modern-cite">Samantha Lee</cite>
+                        <p class="quote-modern-caption">Entrepreneur</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <div class="wow-outer">
+                  <blockquote class="quote-modern wow slideInLeft">
+                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
+                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
+                    </svg>
+                    <div class="quote-modern-text">
+                      <p>The political program of Freedom party, among other options, is aimed at taking care of our culture, which is very important for our state and for the whole country. That is exactly why I appreciate what their team does. Their Art Reform is very detailed and thought-out.</p>
+                    </div>
+                    <div class="quote-modern-meta">
+                      <div class="quote-modern-avatar"><img src="{% static 'images/testimonials-person-2-96x96.jpg' %}" alt="" width="96" height="96"/>
+                      </div>
+                      <div class="quote-modern-info">
+                        <cite class="quote-modern-cite">Bill Warner</cite>
+                        <p class="quote-modern-caption">Artist</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 wow-outer">
+              <div class="thumbnail-video-1 bg-gray-700 wow slideInLeft">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="570" height="320" src="//www.youtube.com/embed/QZzbm-FrkGk" allowfullscreen=""></iframe>
+                </div>
+                <div class="thumbnail-video__overlay video-overlay" style="background-image: url({% static 'images/video-preview-1-570x320.jpg' %})">
+                  <div class="button-video"></div>
+                  <h5>Lawrence Alvarado</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Blog Posts-->
+      <section class="section section-lg">
+        <div class="container">
+          <h3 class="wow-outer text-center"><span class="wow slideInDown">Our Events</span></h3>
+          <div class="row row-50 justify-content-center justify-content-lg-start">
+            <div class="col-md-10 col-lg-7 wow-outer">
+              <!-- Post Block-->
+              <article class="post-block bg-gray-700"><img class="post-block-image" src="{% static 'images/blog-layouts-5-637x456.jpg' %}" alt="" width="637" height="456"/>
+                <div class="post-block-caption">
+                  <ul class="post-block-meta">
+                    <li class="wow-outer"><span class="wow slideInLeft">by Theresa Barnes</span></li>
+                    <li class="wow-outer"><a class="button-winona wow slideInLeft" href="#">News</a></li>
+                    <li class="wow-outer">
+                      <time class="wow slideInLeft" datetime="2018">April 2, 2018</time>
+                    </li>
+                  </ul>
+                  <h4 class="post-block-title"><a href="single-blog-post.html">Choosing Your Future Today</a></h4>
+                </div>
+                <div class="post-block-dummy"></div>
+              </article>
+            </div>
+            <div class="col-md-10 col-lg-5">
+              <div class="post-light-group wow-outer">
+                <!-- Post Light-->
+                <article class="post-light wow slideInLeft">
+                  <time class="post-light-time" datetime="2018"><span class="post-light-time-big">29</span><span class="post-light-time-small">April</span></time>
+                  <div class="post-light-main">
+                    <h4 class="post-light-title"><a href="single-blog-post.html">How Reforms Can Improve Your Life</a></h4>
+                    <ul class="post-light-meta">
+                      <li>by Theresa Barnes</li>
+                      <li><a class="button-winona" href="#">News</a></li>
+                    </ul>
+                  </div>
+                </article>
+                <!-- Post Light-->
+                <article class="post-light wow slideInLeft">
+                  <time class="post-light-time" datetime="2018"><span class="post-light-time-big">30</span><span class="post-light-time-small">April</span></time>
+                  <div class="post-light-main">
+                    <h4 class="post-light-title"><a href="single-blog-post.html">Modern Real Estate Investments Trusts</a></h4>
+                    <ul class="post-light-meta">
+                      <li>by Theresa Barnes</li>
+                      <li><a class="button-winona" href="#">News</a></li>
+                    </ul>
+                  </div>
+                </article>
+                <!-- Post Light-->
+                <article class="post-light wow slideInLeft">
+                  <time class="post-light-time" datetime="2018"><span class="post-light-time-big">2</span><span class="post-light-time-small">May</span></time>
+                  <div class="post-light-main">
+                    <h4 class="post-light-title"><a href="single-blog-post.html">Supporting Businesses in the USA</a></h4>
+                    <ul class="post-light-meta">
+                      <li>by Theresa Barnes</li>
+                      <li><a class="button-winona" href="#">News</a></li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              <div class="wow-outer button-outer"><a class="button button-primary button-winona wow slideInDown" href="grid-blog.html">view all events</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Wide CTA-->
+      <section class="section section-md bg-secondary text-center">
+        <div class="container">
+          <div class="box-cta-1">
+            <h3 class="wow-outer"><span class="wow slideInRight">Your Contributions Make  <span class="font-weight-bold">Our Campaign Possible</span></span></h3>
+            <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInLeft" href="donate.html">Donate</a></div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Blog Posts-->
+      <section class="section section-lg text-center">
+        <div class="container">
+          <h3 class="wow-outer"><span class="wow slideInDown">Latest Blog Posts</span></h3>
+          <div class="row row-50">
+            
+            {% for location in locations %}
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft">
+                <a class="post-modern-media" href="single-blog-post.html">
+                  <!-- <img src="{% static 'images/grid-blog-1-571x353.jpg' %}" alt="" width="571" height="353"/> -->
+                  <div id="map{{location.latitude}}" style="width: 100%; height:200px;"></div>
+
+
+                </a>
+                <h4 class="post-modern-title"><a href="single-blog-post.html">{% for source in location.sources %}{{source.name}} {% endfor %}</a></h4>
+                <ul class="post-modern-meta">
+                  <li>{{location.address.locationName}}</li>
+                  <li>
+                    <time datetime="2018">{{location.pollingHours}}</time>
+                  </li>
+                  <li><a class="button-winona" href="#">{{location.address.line1}}</a></li>
+                </ul>
+                <p>{{location.notes}}</p>
+              </article>
+            </div>
+
+           
+
+            {% endfor %}
+            
+          </div>
+          <div class="wow-outer button-outer"><a class="button button-primary-outline button-winona wow slideInUp" href="grid-blog.html">View all Blog posts</a></div>
+        </div>
+      </section>
+      <!-- Newsletter-->
+      <section class="section section-lg bg-gray-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-8 col-lg-7 col-xl-6">
+              <h3 class="wow-outer text-center"><span class="wow slideInUp">Newsletter</span></h3>
+              <p class="wow-outer"><span class="wow slideInLeft">Keep up with our always upcoming news and updates. Enter your e-mail and subscribe to our newsletter.</span></p>
+              <!-- RD Mailform-->
+              <form class="rd-form rd-mailform form-inline wow fadeIn" data-wow-delay=".2s" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                  <input class="form-input" id="subscribe-form-1-email" type="email" name="email" data-constraints="@Email @Required">
+                  <label class="form-label" for="subscribe-form-1-email">Your e-mail</label>
+                </div>
+                <div class="form-button">
+                  <button class="button button-primary button-winona" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <script>
+        // Initialize and add the map
+        function initMap() {
+
+          {% for location in locations %}
+            // The location of Uluru
+            var uluru = { lat: {{location.latitude}}, lng: {{location.longitude}} };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(document.getElementById('#map{{location.latitude}}'), {
+              zoom: 16,
+              center: uluru,
+            });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+            });
+
+          {% endfor %}
+        }
+      </script>
+      {% endblock %}
